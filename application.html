@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - LUMINAR Leadership Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .form-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .gold {
+            color: #d4af37;
+            font-weight: 600;
+        }
+
+        .intro {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #e6c04d;
+            transform: translateY(-2px);
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .form-wrapper {
+                padding: 35px 25px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-wrapper" id="formContainer">
+        <h1>Apply to <span class="gold">LUMINAR</span></h1>
+        <p class="intro">Complete this application with honesty and intention. We review every submission personally.</p>
+
+        <form id="applicationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country *</label>
+                <input type="text" id="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age *</label>
+                <input type="number" id="age" min="13" max="99" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whyJoin">Why do you want to join LUMINAR? *</label>
+                <textarea id="whyJoin" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="frustration">What frustrates you most about your current mindset or life? *</label>
+                <textarea id="frustration" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="challenged">Are you willing to be challenged and uncomfortable? *</label>
+                <select id="challenged" required>
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="valueBring">What value do you believe you can bring to others? *</label>
+                <textarea id="valueBring" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="commitment">Are you willing to commit time, reflection, and discipline? *</label>
+                <select id="commitment" required>
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="become">What do you hope to become, not just achieve? *</label>
+                <textarea id="become" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+    <div class="form-wrapper success-message" id="successMessage">
+        <h1>Application Received</h1>
+        <p style="margin-top: 20px; font-size: 1.1rem; line-height: 1.8;">Welcome to LUMINAR. Your journey begins now.<br><br>Redirecting you to next steps...</p>
+    </div>
+
+    <script>
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('successMessage').classList.add('show');
+            setTimeout(function() {
+                window.location.href = 'next-steps.html';
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>

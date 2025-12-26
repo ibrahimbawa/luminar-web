@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'AvertaPE';
+    src: url("../fonts/averta/349C84_5_0.eot");
+    src: url("../fonts/averta/349C84_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/averta/349C84_5_0.woff2") format("woff2"), url("../fonts/averta/349C84_5_0.woff") format("woff"), url("../fonts/averta/349C84_5_0.ttf") format("truetype"), url("../fonts/averta/349C84_5_0.svg#wf") format("svg");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'AvertaPE';
+    src: url("../fonts/averta/349C84_1_0.eot");
+    src: url("../fonts/averta/349C84_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/averta/349C84_1_0.woff2") format("woff2"), url("../fonts/averta/349C84_1_0.woff") format("woff"), url("../fonts/averta/349C84_1_0.ttf") format("truetype"), url("../fonts/averta/349C84_1_0.svg#wf") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'AvertaPE-RegularItalic';
+    src: url("../fonts/averta/349C84_2_0.eot");
+    src: url("../fonts/averta/349C84_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/averta/349C84_2_0.woff2") format("woff2"), url("../fonts/averta/349C84_2_0.woff") format("woff"), url("../fonts/averta/349C84_2_0.ttf") format("truetype"), url("../fonts/averta/349C84_2_0.svg#wf") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'AvertaPE';
+    src: url("../fonts/averta/349C84_0_0.eot");
+    src: url("../fonts/averta/349C84_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/averta/349C84_0_0.woff2") format("woff2"), url("../fonts/averta/349C84_0_0.woff") format("woff"), url("../fonts/averta/349C84_0_0.ttf") format("truetype"), url("../fonts/averta/349C84_0_0.svg#wf") format("svg");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'AvertaPE';
+    src: url("../fonts/averta/349C84_3_0.eot");
+    src: url("../fonts/averta/349C84_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/averta/349C84_3_0.woff2") format("woff2"), url("../fonts/averta/349C84_3_0.woff") format("woff"), url("../fonts/averta/349C84_3_0.ttf") format("truetype"), url("../fonts/averta/349C84_3_0.svg#wf") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Thin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Light.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+.column {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.column-new {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.column-12 {
+    background-image: url("../images/toolbox/column-12.svg");
+}
+
+.column-12-new {
+    background-image: url("../images/toolbox/column-12-new.svg");
+}
+
+.column-row {
+    background-image: url("../images/toolbox/column-row.svg");
+}
+
+.column-6-6 {
+    background-image: url("../images/toolbox/column-6-6.svg");
+}
+.column-6-6-new {
+    background-image: url("../images/toolbox/column-6-6-new.svg");
+}
+
+.column-4-4-4 {
+    background-image: url("../images/toolbox/column-4-4-4.svg");
+}
+
+.column-3-3-3-3 {
+    background-image: url("../images/toolbox/column-3-3-3-3.svg");
+}
+
+.column-3-3-3-3-new {
+    background-image: url("../images/toolbox/column-3-3-3-3-new.svg");
+}
+
+.base-element-icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-element-icon {
+    background-image: url("../images/toolbox/text.svg");
+}
+
+.section-element-icon {
+    background-image: url("../images/toolbox/section.svg");
+}
+
+.form-input-icon {
+    background-image: url("../images/toolbox/form-input.svg");
+}
+
+.form-icon {
+    /* TODO: add form icon */
+    background-image: url("../images/toolbox/form-input.svg");
+}
+
+.button-element-icon {
+    background-image: url("../images/toolbox/button.svg");
+}
+
+.login-element-icon {
+    background-image: url("../images/toolbox/log-in-02.svg");
+}
+
+.registration-element-icon {
+    background-image: url("../images/toolbox/user-right-01.svg");
+}
+
+.payment-button-icon {
+    background-image: url("../images/toolbox/payment-button.svg");
+}
+
+.payment-method-icon {
+    background-image: url("../images/toolbox/payment-method.svg");
+}
+
+.customer-type-icon {
+    background-image: url("../images/toolbox/customer-type.svg");
+}
+
+.order-bump-icon {
+    background-image: url("../images/toolbox/order-bump.svg");
+}
+
+.agreement-icon {
+    background-image: url("../images/toolbox/agreement.svg");
+}
+
+.shipping-fees-icon {
+    background-image: url("../images/toolbox/shipping-fees.svg");
+}
+
+.image-icon {
+    background-image: url("../images/toolbox/image.svg");
+}
+
+.video-icon {
+    background-image: url("../images/toolbox/video.svg");
+}
+
+.carousel-icon {
+    background-image: url("../images/toolbox/carousel.svg");
+}
+
+.survey-icon {
+    background-image: url("../images/toolbox/survey.svg");
+}
+
+.countdown-icon {
+    background-image: url("../images/toolbox/countdown.svg");
+}
+
+.raw-html-icon {
+    background-image: url("../images/toolbox/raw-html.svg");
+}
+
+.breadcrumbs-icon {
+    background-image: url("../images/toolbox/breadcrumbs.svg");
+}
+
+.facebook-icon {
+    background-image: url("../images/toolbox/facebook.svg");
+}
+
+.x-icon {
+    background-image: url("../images/toolbox/x.svg");
+}
+
+.blog-post-body-icon {
+    background-image: url("../images/toolbox/blog-post-body.svg");
+}
+
+.latest-posts-icon {
+    background-image: url("../images/toolbox/latest-blog-posts-new.svg");
+}
+
+.latest-posts-carousel-icon {
+    background-image: url("../images/toolbox/carousel.svg");
+}
+
+.logo-icon {
+    background-image: url("../images/toolbox/logo.svg");
+}
+
+.language-switcher-icon {
+  background-image: url("../images/toolbox/language-switcher.svg");
+}
+
+.latest-posts-library-icon {
+    width: 45px;
+    height: 45px !important;
+    background-image: url("../images/toolbox/latest-blog-posts.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.posts-library-icon {
+    background-image: url("../images/toolbox/blog-posts-list.svg");
+    background-size: contain;
+}
+
+.posts-library-icon-new {
+    background-image: url("../images/toolbox/blog-posts-list-new.svg");
+    background-size: contain;
+}
+
+/* @deprecated should be removed after introducing https://app.shortcut.com/systeme/epic/55145?group_by=none&vc_group_by=day&ct_workflow=all&cf_workflow=500036700 */
+.toolbox-horizontal-line {
+    display: flex;
+    align-items: center;
+}
+/* @deprecated */
+.toolbox-horizontal-line:after {
+    content: ' ';
+    background-color: #acc9de;
+    height: 3px;
+    width: 50px;
+}
+
+.ace_editor {
+    font-family: monospace !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --color-blue: rgba(20,158,252,1);
+    --font-family: Inter, Helvetica, Arial, sans-serif;
+    --default-font-size: 14px;
+    --default-text-color: #414355;
+    --default-blue-color: #149efc;
+
+    --layout-header-height: 48px;
+    --layout-breadcrumbs-height: 48px;
+
+    --sidebar-padding: 20px;
+}
